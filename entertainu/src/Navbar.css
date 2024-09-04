@@ -1,0 +1,70 @@
+/* Reset and Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(213, 58, 58);
+    
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  background-color: rgb(159, 44, 44);
+    
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(48, 23, 23, 0.9);
+    border-radius: 20px;
+    
+
+}
+
+/* Logo Styling */
+.navbar-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navbar Links Styling */
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #751a1a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #530d0d;
+    color: white
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links {
+        margin-top: 10px;
+    }
+
+    .navbar-links a {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}
